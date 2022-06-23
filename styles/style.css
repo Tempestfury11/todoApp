@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
+
+body {
+    background-color:navy;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+#input-container {
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+input[type=text] {
+    padding: 10px;
+    width: 60%;
+    border: none;
+}
+
+#sort-by {
+    text-align: center;
+}
+
+#items-container {
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+}
+
+#list {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.list-item {
+    background-color: white;
+    padding: 3%;
+    display: table;
+    border-color: black;
+}
+
+.list-item:hover, .complete {
+    background-color:black;
+    color: white;
+    cursor: pointer;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+label {
+    display: table-cell;
+    width: 100%;
+    border-color:black;
+    
+}
+
+button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:red;
+}
+
+#button {
+    text-align: right;
+}
+
+.delete-button {
+    background-color: red;
+    margin-left: 0.5rem;
+    display: inline-block;
+    text-align: right;
+}
+
+.delete-button:hover {
+    background-color: turquoise;
+}
+
+.hide {
+    display: none;
+}
+
+@media (min-width: 750px) {
+    #items-container {
+        width: 60%;
+    }
+
+    #input-container {
+        width:60%
+    }
+}
+
+@media (min-width: 900px) {
+    #items-container {
+        width: 40%;
+    }
+
+    #input-container {
+        width:40%
+    }
+}
