@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap');
 
 body {
     background-color:navy;
@@ -9,7 +8,7 @@ h1 {
     color: white;
 }
 
-#input-container {
+#input-field {
     padding: 1%;
     margin: auto;
     margin-bottom: 2%;
@@ -26,7 +25,7 @@ input[type=text] {
     text-align: center;
 }
 
-#items-container {
+#list-container {
     width: 80%;
     margin: auto;
     margin-top: 1%;
@@ -49,7 +48,7 @@ input[type=text] {
 }
 
 .list-item:hover, .complete {
-    background-color:black;
+    background-color:red;
     color: white;
     cursor: pointer;
 }
@@ -72,13 +71,14 @@ label {
 button {
     background-color: red;
     color: white;
-    border: none;
+    border: white;
     padding: 10px;
 }
 
 button:hover {
     cursor: pointer;
     background-color:red;
+    border: white;
 }
 
 #button {
@@ -90,10 +90,11 @@ button:hover {
     margin-left: 0.5rem;
     display: inline-block;
     text-align: right;
+    border-color: white;
 }
 
 .delete-button:hover {
-    background-color: turquoise;
+    background-color: navy;
 }
 
 .hide {
@@ -101,21 +102,21 @@ button:hover {
 }
 
 @media (min-width: 750px) {
-    #items-container {
+    #list-container {
         width: 60%;
     }
 
-    #input-container {
+    #input-field {
         width:60%
     }
 }
 
 @media (min-width: 900px) {
-    #items-container {
+    #list-container {
         width: 40%;
     }
 
-    #input-container {
+    #input-field {
         width:40%
     }
 }

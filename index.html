@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
-    <title>todo List</title>
+    <title>todo App</title>
 </head>
 <body>
-    <h1>todo List</h1>
+    <h1>todo App</h1>
 
-    <div id="input-container">
+    <div id="input-field">
       <form id="todo-form">
         <input type="text" id="input">
         <button type="submit">Add</button>
@@ -20,17 +20,19 @@
     <div id="sort-by">
       <button id="all" class="view hide">All</button>
       <button id="completed-items"  class="view hide">Completed</button>
-      <button id="uncompleted-items"  class="view hide">Not Completed</button>
+      <button id="uncompleted-items"  class="view hide">Uncompleted</button>
+      <button id="sortby" class="view hide">Sortby</button>
     </div>
     
-    <div id="items-container">
+    <div id="list-container">
       <ul id="list"></ul> 
     
       <div id="button">
         <button id="mark-as-complete"  class="view hide">Mark all as Completed</button>
         <button id="clear-list"  class="view hide">Clear List</button>
       </div>
-    </div> 
+    </div>
+
     <script src="./java/code.js"></script>
 </body>
 </html>
