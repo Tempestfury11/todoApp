@@ -5,7 +5,6 @@ const allBtn = document.querySelector('#all')
 const completedBtn = document.querySelector('#completed-items')
 const nonCompletedBtn = document.querySelector('#uncompleted-items')
 const list = document.querySelector('#list')
-const completeAllBtn = document.querySelector('#mark-as-complete')
 const clearBtn = document.querySelector('#clear-list')
 const STORAGE_PREFIX = "TODO_LIST"
 const TODOS_STORAGE_KEY = `${STORAGE_PREFIX}-todos`
