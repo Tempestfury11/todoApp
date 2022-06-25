@@ -82,7 +82,7 @@ button:hover {
 }
 
 #button {
-    text-align: right;
+    text-align: center;
 }
 
 .delete-button {
@@ -119,8 +119,4 @@ button:hover {
     #input-field {
         width:40%
     }
-}
-
-#button {
-    text-align: center;
 }
