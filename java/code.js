@@ -12,7 +12,6 @@ const TODOS_STORAGE_KEY = `${STORAGE_PREFIX}-todos`
 let todos = []
 todos.forEach(addTodoToList)
 
-// submit form
 form.addEventListener("submit", e => {
     e.preventDefault()
 
@@ -35,13 +34,11 @@ form.addEventListener("submit", e => {
     }) 
 })
 
-// show all todos
 allBtn.addEventListener("click", () => {
     const allItems = Array.from(list.children)
     allItems.forEach(todo => todo.classList.remove('hide'))
 })
 
-// only show completed items
 completedBtn.addEventListener("click", () => {
     const allItems = Array.from(list.children)
     allItems.forEach(todo => todo.classList.remove('hide'))
@@ -49,7 +46,6 @@ completedBtn.addEventListener("click", () => {
     completed.forEach(todo => todo.classList.add('hide'))
 })
 
-// only show uncompleted items
 nonCompletedBtn.addEventListener("click", () => {
     const allItems = Array.from(list.children)
     allItems.forEach(todo => todo.classList.remove('hide'))
@@ -57,7 +53,6 @@ nonCompletedBtn.addEventListener("click", () => {
     completed.forEach(todo => todo.classList.add('hide'))
 })
 
-// clear list
 clearBtn.addEventListener("click", () => {
     const allItems = Array.from(list.children)
     allItems.forEach(item => item.remove())
@@ -67,7 +62,6 @@ clearBtn.addEventListener("click", () => {
     })
 })
 
-// mark all items as completed
 completeAllBtn.addEventListener("click", () => {
     const allItems = Array.from(list.children)
     allItems.forEach(item => {
@@ -86,7 +80,6 @@ completeAllBtn.addEventListener("click", () => {
     }
 })
 
-// mark item as complete ( if user clicks outside of label )
 list.addEventListener("click", e => {
     if (!e.target.matches('.list-item')) return
 
@@ -99,7 +92,6 @@ list.addEventListener("click", e => {
     currentItem.querySelector('.checkbox').checked = todo.complete
 })
 
-// checkboxes
 list.addEventListener("change", e => {
     if (!e.target.matches('.checkbox')) return
 
@@ -119,7 +111,6 @@ list.addEventListener("change", e => {
     todo.complete = parent.classList.contains('complete')
 })
 
-// delete item
 list.addEventListener("click", e => {
     if (!e.target.matches('.delete-button')) return
 
@@ -134,7 +125,6 @@ list.addEventListener("click", e => {
     }) 
 })
 
-// render todo
 function addTodoToList(todo) {
     const item = document.createElement('li')
     item.classList.add('list-item')
